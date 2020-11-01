@@ -17,6 +17,7 @@ Route::get('/login' , \App\Http\Livewire\Login::class)->name('login');
 Route::get('/logout' , '\App\Http\Livewire\Login@logout')->name('logout');
 
 Route::middleware('auth')->group(function () {
+    Route::get('/' , \App\Http\Livewire\Dashboard::class)->name('dashboard');
     Route::get('/dashboard' , \App\Http\Livewire\Dashboard::class)->name('dashboard');
     Route::get('/agendamentos' , \App\Http\Livewire\Agendamentos::class)->name('agendamentos');
     Route::get('/pacientes' , \App\Http\Livewire\Pacientes::class)->name('pacientes');

@@ -105593,3 +105593,7 @@ html, body{
             animation: bounce 1s infinite;
   }
 }
+
+button:focus{
+  outline: initial;
+}

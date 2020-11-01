@@ -1,5 +1,5 @@
 <div>
-    @include('components.menu')
+    @include('componentes.menu')
     <div class="container mx-auto">
         <table class="table-auto w-full">
             <thead>
